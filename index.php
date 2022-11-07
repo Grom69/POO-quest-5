@@ -10,25 +10,32 @@ $car = new Car('blue', 4, 'electric');
 
 
 // Moving bike
-echo $bike->forward();
+echo $bike->forward() . '<br>';
 
-var_dump($bike->switchOn());
+echo 'Light : ';
+echo var_export($bike->switchOn());
 
 echo '<br> Vitesse du vélo : ' . $bike->getCurrentSpeed() . ' km/h' . '<br>';
 echo $bike->brake();
 echo '<br> Vitesse du vélo : ' . $bike->getCurrentSpeed() . ' km/h' . '<br>';
-echo $bike->brake();
+echo $bike->brake() . '<br>';
 
-var_dump($bike->switchOn());
+echo 'Light : ';
+echo var_export($bike->switchOn()) . '<br>';
+echo '<br>';
+echo '<br>';
+
 
 // Moving car
-echo $car->forward();
+echo $car->forward() . '<br>';
 
-var_dump($car->switchOn());
+echo 'Light : ';
+echo var_export($car->switchOn());
 
 echo '<br> Vitesse de la voiture : ' . $car->getCurrentSpeed() . ' km/h' . '<br>';
 echo $car->brake();
 echo '<br> Vitesse de la voiture: ' . $car->getCurrentSpeed() . ' km/h' . '<br>';
-echo $car->brake();
+echo $car->brake() . '<br>';
 
-var_dump($car->switchOff());
+echo 'Light : ';
+echo var_export($car->switchOff()) . '<br>';
